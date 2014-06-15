@@ -1,0 +1,3 @@
+exceptions="Shared"
+
+for user in $(ls -d /Users/*|egrep -v "$exceptions"|sed 's/\/Users\///g;'); do
