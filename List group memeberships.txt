@@ -1,0 +1,3 @@
+USERID=eholtam
+
+id $USERID | tr ',' '\n' | grep MEREDITH | awk -F\\ '{ print $2 }' | tr -d ')' | sort

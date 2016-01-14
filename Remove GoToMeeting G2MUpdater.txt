@@ -1,0 +1,2 @@
+launchctl unload /Users/$USER/Library/LaunchAgents/com.citrixonline.GoToMeeting.G2MUpdate.plist
+rm /Users/$USER/Library/LaunchAgents/com.citrixonline.GoToMeeting.G2MUpdate.plist

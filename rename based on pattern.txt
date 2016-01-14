@@ -1,0 +1,2 @@
+for file in *.jpeg; do mv "${file}" "${file%.jpeg}.jpg"; done
+<@frogor>	 That would fix all the .jpeg files and make them .jpg files

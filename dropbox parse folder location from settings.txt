@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Personal: "
+python -c "import json;f=open('$HOME/.dropbox/info.json', 'r').read();data=json.loads(f);print data.get('personal', {}).get('path', '')"
+
+echo "Business: "
+python -c "import json;f=open('$HOME/.dropbox/info.json', 'r').read();data=json.loads(f);print data.get('business', {}).get('path', '')"

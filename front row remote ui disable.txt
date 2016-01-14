@@ -1,0 +1,4 @@
+How to stop Front Row from continually prompting to run with MCX on:
+
+launchctl stop com.apple.RemoteUI
+launchctl unload -w /System/Library/LaunchAgents/com.apple.RemoteUI.plist

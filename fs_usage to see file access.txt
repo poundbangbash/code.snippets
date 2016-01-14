@@ -1,0 +1,9 @@
+frogor: I'm running this: sudo fs_usage -e -ww -f filesys -f pathname | grep --line-buffered deployment
+-e filters out fs_usage from its own logs
+-ww does extra wide non-limited output
+-f filesys and -f pathname limit it to file activity
+And with --line-buffered on grep, I can get exactly the output lines I want while fs_usage is running
+You can see [stat] operations where it attempts to see if a file exists
+Followed by [open] operations where it tries to read the file
+Full path is listed
+Yeah, you can see in real time where it's looking / what it's trying to see

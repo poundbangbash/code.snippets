@@ -1,0 +1,4 @@
+if [[ $EUID -ne 0 ]]; then 
+	/bin/echo "ERROR: Not running as root user. Terminating...."
+	exit 1
+fi

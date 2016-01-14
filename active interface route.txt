@@ -1,1 +1,1 @@
-route get meredith.com | grep interface | awk '{print $2}'
+route get meredith.com | awk '/interface/ {print $2}'
