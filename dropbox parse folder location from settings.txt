@@ -1,7 +1,12 @@
 #!/bin/bash
 
-echo "Personal: "
-python -c "import json;f=open('$HOME/.dropbox/info.json', 'r').read();data=json.loads(f);print data.get('personal', {}).get('path', '')"
+if [ -d $HOME/.dropbox ]
+then
+	echo "Personal: "
+	python -c "import json;f=open('$HOME/.dropbox/info.json', 'r').read();data=json.loads(f);print data.get('personal', {}).get('path', '')"
 
-echo "Business: "
-python -c "import json;f=open('$HOME/.dropbox/info.json', 'r').read();data=json.loads(f);print data.get('business', {}).get('path', '')"
+	echo "Business: "
+	python -c "import json;f=open('$HOME/.dropbox/info.json', 'r').read();data=json.loads(f);print data.get('business', {}).get('path', '')"
+else
+	echo "Dropbox is not setup for $USER"
+fi
