@@ -1,0 +1,1 @@
+fs_usage -e -ww -f diskio -f pathname | grep "/Users" | grep lstat64 | grep -v "\["
