@@ -1,1 +1,1 @@
-ifconfig $(route get google.com | awk '/interface/ {print $2}') | awk '/inet/ {print $2}'
+ifconfig $(route get google.com | awk '/interface/ {print $2}') | awk '/inet / {print $2}'
