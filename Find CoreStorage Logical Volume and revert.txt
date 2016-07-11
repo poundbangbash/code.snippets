@@ -1,0 +1,9 @@
+LogicalVolumeUUID=$(diskutil cs list | awk '/\+-> Logical Volume / && !/Family/ {print $4}')
+
+if [ -z ${LogicalVolumeUUID} ]
+then
+    echo "No Core Storage Logical Volume found"
+    exit 1
+else
+    /usr/sbin/diskutil cs revert ${LogicalVolumeUUID}
+fi
