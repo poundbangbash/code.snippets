@@ -1,0 +1,1 @@
+ python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('AutomaticCheckEnabled', 'com.apple.SoftwareUpdate'))"
