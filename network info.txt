@@ -1,0 +1,7 @@
+get current network interface:
+
+/usr/sbin/scutil --nwi | grep -A1 "IPv4 network" | sed '1d' | awk '{print $1}'
+
+get current active MAC address:
+
+/usr/sbin/networksetup -getmacaddress $(/usr/sbin/scutil --nwi | grep -A1 "IPv4 network" | sed '1d' | awk '{print $1}') | awk '{print $3}'
