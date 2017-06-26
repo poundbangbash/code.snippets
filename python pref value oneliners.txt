@@ -1,0 +1,7 @@
+Python check for preferences:
+
+What setting is set:
+python -c "from Foundation import CFPreferencesAppValueIsForced ; print(CFPreferencesAppValueIsForced('InstallAppleSoftwareUpdates', 'ManagedInstalls'))"
+
+Is the setting set by a profile?:
+python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('InstallAppleSoftwareUpdates', 'ManagedInstalls'))"
