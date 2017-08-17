@@ -1,7 +1,7 @@
 Python check for preferences:
 
 Is the setting set by a profile?:
-python -c "from Foundation import CFPreferencesAppValueIsForced ; print(CFPreferencesAppValueIsForced('OverrideAccountConfigurationWindow', 'com.microsoft.Outlook'))"
+python -c "from Foundation import CFPreferencesAppValueIsForced ; print(CFPreferencesAppValueIsForced('ChannelName', 'com.microsoft.autoupdate2'))"
 
 What setting is set:
-python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('OverrideAccountConfigurationWindow', 'com.microsoft.Outlook'))"
+python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('ChannelName', 'com.microsoft.autoupdate2'))"
