@@ -1,5 +1,5 @@
 #!/usr/bin/python
 from Foundation import CFPreferencesCopyAppValue
 
-pref_value = CFPreferencesCopyAppValue('OverrideAccountConfigurationWindow', 'com.microsoft.Outlook')
+pref_value = CFPreferencesCopyAppValue('CatalogURL', 'com.apple.SoftwareUpdate')
 print pref_value

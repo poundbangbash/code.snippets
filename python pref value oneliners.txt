@@ -1,7 +1,7 @@
 Python check for preferences:
 
 Is the setting set by a profile?:
-python -c "from Foundation import CFPreferencesAppValueIsForced ; print(CFPreferencesAppValueIsForced('ChannelName', 'com.microsoft.autoupdate2'))"
+python -c "from Foundation import CFPreferencesAppValueIsForced ; print(CFPreferencesAppValueIsForced('CatalogURL', 'com.apple.SoftwareUpdate'))"
 
 What setting is set:
-python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('ChannelName', 'com.microsoft.autoupdate2'))"
+python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('CatalogURL', 'com.apple.SoftwareUpdate'))"
