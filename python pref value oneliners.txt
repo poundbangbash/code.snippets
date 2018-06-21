@@ -1,7 +1,7 @@
 Python check for preferences:
 
 Is the setting set by a profile?:
-python -c "from Foundation import CFPreferencesAppValueIsForced ; print(CFPreferencesAppValueIsForced('CatalogURL', 'com.apple.SoftwareUpdate'))"
+python -c "from Foundation import CFPreferencesAppValueIsForced ; print(CFPreferencesAppValueIsForced('ShowWhatsNewOnLaunch', 'com.microsoft.office'))"
 
 What setting is set:
-python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('CatalogURL', 'com.apple.SoftwareUpdate'))"
+python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('ShowWhatsNewOnLaunch', 'com.microsoft.office'))"
