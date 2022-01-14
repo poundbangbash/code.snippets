@@ -4,4 +4,6 @@ Is the setting set by a profile?:
 python -c "from Foundation import CFPreferencesAppValueIsForced ; print(CFPreferencesAppValueIsForced('ShowWhatsNewOnLaunch', 'com.microsoft.office'))"
 
 What setting is set:
-python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('ShowWhatsNewOnLaunch', 'com.microsoft.office'))"
+python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('PerformAuthRestarts', 'ManagedInstalls'))"
+python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('SuppressStopButtonOnInstall', 'ManagedInstalls'))"
+python -c "from Foundation import CFPreferencesCopyAppValue ; print(CFPreferencesCopyAppValue('scriptTimeOut', 'MunkiReport'))"
