@@ -1,0 +1,5 @@
+Setup Assistant predicate unified log
+log show --debug --info --predicate '(subsystem contains[cd] "com.apple") && (category == "MacBuddyX")'
+
+MDM activity at Setup Assistant unified log
+log show --info --debug --predicate '(subsystem == "com.apple.mac.install") || (subsystem == "com.apple.ManagedClient")'

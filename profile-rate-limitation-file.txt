@@ -1,0 +1,4 @@
+profile rate limitation file
+/private/var/db/ConfigurationProfiles/Settings/.profilesFetchTimerCheck
+
+SIP Protected but removable via Recovery
