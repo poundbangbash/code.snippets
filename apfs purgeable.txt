@@ -1,0 +1,3 @@
+Reclaiming purgeable space on APFS
+
+sudo /System/Library/Filesystems/apfs.fs/Contents/Resources/apfs.util -P  /System/Volumes/Data/private/var/db/*
